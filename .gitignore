@@ -1,2 +1,4 @@
 .venv
 .vscode
+upload.bat
+version_bump.py
