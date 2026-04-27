@@ -1,0 +1,35 @@
+from numba import jit
+class OverflowError(Exception):
+    def __repr__(self):
+        print("LimitedArray Overflowed.")
+class ImHasNone(Exception):
+    def __repr__(self):
+        print("LimitedArray Downflowed.")
+class LimitedArray:
+    @jit(nopython=True)
+    def __init__(self, capacity=100):
+        self.capacity=capacity
+        self.list = []
+        self.top = 0
+    @jit(nopython=True)
+    def put(self, content):
+        if self.top >= self.capacity:
+            raise OverflowError
+        else:
+            self.list.append(content)
+            self.top += 1
+            return
+    @jit(nopython=True)
+    def pop(self):
+        if self.top == 0:
+            raise ImHasNone
+        else:
+            a = self.list.pop()
+            self.top -= 1
+            return a
+    @jit(nopython=True)
+    def peek(self):
+        if self.top == 0:
+            raise ImHasNone
+        else:
+            return self.list[self.top]

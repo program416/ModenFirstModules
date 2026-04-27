@@ -1,9 +1,0 @@
-LICENSE
-README.md
-pyproject.toml
-src/ModenFirstModules/PrintConfig.py
-src/ModenFirstModules/__init__.py
-src/ModenFirstModules.egg-info/PKG-INFO
-src/ModenFirstModules.egg-info/SOURCES.txt
-src/ModenFirstModules.egg-info/dependency_links.txt
-src/ModenFirstModules.egg-info/top_level.txt
