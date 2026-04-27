@@ -1,6 +1,6 @@
 [project]
 name = "ModenFirstModules"
-version = "1.2.0"
+version = "1.2.1"
 authors = [
   { name="program416", email="leogifted@naver.com" },
 ]
@@ -10,7 +10,7 @@ dependencies = [
 ]
 description = "A very small modules"
 readme = "README.md"
-requires-python = ">=3.9"
+requires-python = ">=3.10, <3.15"
 classifiers = [
     "Programming Language :: Python :: 3",
     "Operating System :: OS Independent",
